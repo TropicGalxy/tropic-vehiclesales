@@ -81,7 +81,7 @@ RegisterNetEvent('tropic-vehiclesales:attemptSell', function()
     if price <= 0 then
         lib.notify({
             title = 'Error',
-            description = 'This vehicle cannot be sold.',
+            description = 'You do not own this vehicle.',
             type = 'error'
         })
         return
